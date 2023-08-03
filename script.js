@@ -1,4 +1,3 @@
-<script>
   function smoothScroll(target) {
     const element = document.querySelector(target);
     if (element) {
@@ -17,4 +16,13 @@
       smoothScroll(target);
     });
   });
-</script>
+
+  let ham = document.getElementById('hamburger')
+  function openIcon(){
+    ham.classList.add('w-[100%]');
+  }
+  function closeIcon(){
+    ham.classList.remove('w-[100%]');
+  }
+
+

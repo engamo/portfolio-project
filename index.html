@@ -18,11 +18,24 @@
     <title>Portfolio Project</title>
   </head>
   <body class="bg-[#282C33] font-[fira Code]">
-    <header id="home" class="bg-[#282C33]">
+      <div class="fa-solid fa-bars fa-2x fixed top-[40px] right-[100px] text-white cursor-pointer text-[40px]" onclick="openIcon()">
+      </div>
+        <div class="fixed bg-[#282C33]  w-0 h-[100vh] text-white flex justify-center items-center text-[40px] tracking-[1px] overflow-hidden origin-left duration-500" id="hamburger">
+          <ul>
+            <li class="mb-[15px] hover:text-[#C778DD] duration-500 hover:translate-y-[-5px]"><a href="#">Home</a></li>
+            <li class="mb-[15px] hover:text-[#C778DD] duration-500 hover:translate-y-[-5px]"><a href="#">Projects</a></li>
+            <li class="mb-[15px] hover:text-[#C778DD] duration-500 hover:translate-y-[-5px]"><a href="#">About</a></li>
+            <li class="mb-[15px] hover:text-[#C778DD] duration-500 hover:translate-y-[-5px]"><a href="#">Blog</a></li>
+            <li class="mb-[15px] hover:text-[#C778DD] duration-500 hover:translate-y-[-5px]"><a href="#">Contact</a></li>
+            
+          </ul>
+          <div class= "absolute fa-solid fa-xmark fa-2x text-white top-[40px] right-[100px] cursor-pointer text-[40px]" onclick="closeIcon()">
+          </div>
+        </div>
       <nav 
-        class="flex justify-between px-[10rem] pt-[32px] pb-[8px] flex-wrap text-white"
+        class="flex justify-between px-[8rem] pt-[32px] pb-[8px] flex-wrap text-white"
       >
-        <h2 class="text-[#C778DD] font-bold">&ltENGAMO/&gt</h2>
+        <h2 class="text-[#C778DD] font-bold cursor-pointer">&ltENGAMO/&gt</h2>
         <ul class="flex px-[40px]">
           <li>
             <a href="#" class="px-[32px] py-[10px] hover:bg-[#C778DD]">Home</a>
@@ -34,7 +47,7 @@
           </li>
           <li>
             <a href="#about" class="px-[32px] py-[10px] hover:bg-[#C778DD]"
-              >About</a
+              >About me</a
             >
           </li>
           <li>
@@ -53,7 +66,7 @@
 
     <main>
       <section
-        class="mt-[8rem] mb-[7rem] text-start text-white px-[10rem] flex flex-wrap justify-between"
+        class="mt-[8rem] mb-[7rem] text-start text-white px-[8rem] flex flex-wrap justify-between"
       >
         <div class="flex flex-col justify-center max-w-lg">
           <h1 class="font-[fira code] text-[32px] text-white-600 mb-4">
@@ -70,25 +83,27 @@
           </button></a>
         </div>
         <div>
-          <img
-            class="w-[400px] mr-20 rounded-2xl border border-b-8 border-[#C778DD]"
+          <figure>
+            <img
+            class="w-[400px] mr-20 rounded-2xl border border-b-8 border-[#C778DD] animate-pulse"
             src="images/my-pp.jpg"
             alt="Anthonio Mustapha"
           />
+          </figure>
           <div class="p-4">
             <i class="fa-solid fa-circle bg-[#C778DD] text-[#C778DD]"></i>
             <span class="text-[#ABB2BF]">Currently working on my <span class="text-white">Portfolio</span></span>
           </div>
         </div>
       </section>
-      <section id="projects" class="ml-[10rem] mr-[15rem] mt-[10rem]">
+        <section id="projects" class="text-white mt-[8rem] mb-[7rem] px-[8rem]">
         <div>
           <h2 class="text-white text-[32px] mb-[14px] font-medium">Projects</h2>
           <p class="text-[16px] text-[#ABB2BF]">List of my projects</p>
         </div>
 
         <div class="flex flex-wrap mt-[48px]">
-          <div class="border border-[#ABB2BF] max-w-xs mr-4 mt-4 p-4">
+          <div class="border border-[#ABB2BF] max-w-sm mr-4 mt-4 p-4 hover:translate-y-[-10px]">
             <img src="images/myTeamPageimg.jpg" alt="" />
             <h3 class="text-[#ABB2BF] text-400 text-center p-4 border-b-2">
               HTML CSS and Javascript
@@ -110,7 +125,7 @@
               </div>
             </div>
           </div>
-          <div class="border border-[#ABB2BF] max-w-xs mr-4 mt-4 p-4">
+          <div class="border border-[#ABB2BF] max-w-sm mr-4 mt-4 p-4 hover:translate-y-[-10px]">
             <img src="images/portfolioformerimg.jpg" alt="" />
             <h3 class="text-[#ABB2BF] text-400 text-center p-4 border-b-2">
               HTML CSS and Javascript
@@ -132,7 +147,7 @@
               </div>
             </div>
           </div>
-          <div class="border border-[#ABB2BF] max-w-xs mr-4 mt-4 p-4">
+          <div class="border border-[#ABB2BF] max-w-sm mr-4 mt-4 p-4 hover:translate-y-[-10px]">
             <img src="images/interiorConsultantImg.jpg" alt="" />
             <h3 class="text-[#ABB2BF] text-400 text-center p-4 border-b-2">
               HTML CSS and Javascript
@@ -154,7 +169,7 @@
               </div>
             </div>
           </div>
-          <div class="border border-[#ABB2BF] max-w-xs mr-4 mt-4 p-4">
+          <div class="border border-[#ABB2BF] max-w-sm mr-4 mt-4 p-4 hover:translate-y-[-10px]">
             <img src="images/unitconverterImg.jpg" alt="" />
             <h3 class="text-[#ABB2BF] text-400 text-center p-4 border-b-2">
               HTML CSS and Javascript
@@ -176,7 +191,7 @@
               </div>
             </div>
           </div>
-          <div class="border border-[#ABB2BF] max-w-xs mr-4 mt-4 p-4">
+          <div class="border border-[#ABB2BF] max-w-sm mr-4 mt-4 p-4 hover:translate-y-[-10px]">
             <img src="images/tiidelabminipsc.jpg" alt="" />
             <h3 class="text-[#ABB2BF] text-400 text-center p-4 border-b-2">
               HTML CSS and Javascript
@@ -220,11 +235,13 @@
               the newest technologies and frameworks.
             </p>
           </div>
-          <img
-            class="rounded-2xl border border-b-8 border-[#C778DD]"
+          <figure>
+            <img
+            class="rounded-2xl border border-b-8 border-[#C778DD] animate-pulse"
             src="images/my-pp.jpg"
             alt=""
           />
+          </figure>
         </div>
       </section>
       <section id="about" class="px-[8rem] text-white">
@@ -257,13 +274,13 @@
       <section id="blog" class="text-white mt-[8rem] mb-[7rem] px-[8rem]">
           <h3 class="mb-[48px] text-[32px] font-medium">Blog</h3>
           <div class="flex flex-wrap mt-[48px]">
-          <div class="p-8 border border-[#C778DD] max-w-lg mr-4">
+          <div class="p-8 border border-[#C778DD] max-w-lg mr-4 mb-4 hover:translate-y-[-10px]">
             <img class="mb-4" src="images/TIIDELab preXimg.jpg" alt="">
             <p class="text-[#ABB2BF] mb-4">May 21, 2023</p>
             <h4 class="text-white text-[24px] mb-4">Unleashing Potential: A Journey of Transformation in the TIIDELab Prefellowship Cohort 3.0</h4>
             <a href="https://medium.com/@engamo/unleashing-potential-a-journey-of-transformation-in-the-tiidelab-prefellowship-cohort-3-0-2faa20f4a093"><button class="text-[#ABB2BF] border border-[#ABB2BF] px-4 py-2 hover:text-[#C778DD]">Read more</button></a>
           </div>
-          <div class="p-8 border border-[#C778DD] max-w-lg mr-4">
+          <div class="p-8 border border-[#C778DD] max-w-lg mr-4 mb-4 hover:translate-y-[-10px]">
             <img class="mb-4" src="images/TIIDELabC5X.jpg" alt="">
             <p class="text-[#ABB2BF] mb-4">August 2, 2023</p>
             <h4 class="text-white text-[24px] mb-4">TIIDELab Cohort 5 Experience | Month 1</h4>
@@ -297,7 +314,7 @@
 			<footer class="px-[8rem] py-8 border-t border-[#ABB2BF]">
 				<div class="flex justify-between items-center text-justify text-[#ABB2BF]">
 					<div>
-						<h2 class="text-[#C778DD] font-bold">&ltENGAMO/&gt</h2>
+						<h2 class="text-[#C778DD] font-bold cursor-pointer">&ltENGAMO/&gt</h2>
 						<p>A Frontend Developer</p>
 					</div>
 					<div class="flex flex-col justify-center items-center text-center">
