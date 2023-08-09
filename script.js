@@ -17,16 +17,23 @@
     });
   });
 
-  // let ham = document.getElementById('hamburger')
-  // function openIcon(){
-  //   ham.classList.add('w-[100%]');
-  // }
-  // function closeIcon(){
-  //   ham.classList.remove('w-[100%]');
-  // }
+ 
 
-  function Menu(e) {
-    let list = document.querySelector('ul');
-    e.name === 'menu' ? (e.name = 'close', list.classList.add('top-[80px]') , list.classList.add('opacity-100')) : (e.name = 'menu', list.classList.remove('top-[80px]'), list.classList.add('opacity-100'))
+
+
+  const navLinks = document.querySelector('.nav-links');
+  const menuIcon = document.getElementById('menuIcon');
+  let isMenuOpen = false;
+
+  function onToggleMenu() {
+    isMenuOpen = !isMenuOpen;
+    if (isMenuOpen) {
+      navLinks.classList.add('top-[9%]');
+      menuIcon.setAttribute('name', 'close');
+    } else {
+      navLinks.classList.remove('top-[9%]');
+      menuIcon.setAttribute('name', 'menu');
+    }
   }
 
+ 
