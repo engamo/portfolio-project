@@ -28,10 +28,10 @@
   function onToggleMenu() {
     isMenuOpen = !isMenuOpen;
     if (isMenuOpen) {
-      navLinks.classList.add('top-[9%]');
+      navLinks.classList.add('top-[15%]');
       menuIcon.setAttribute('name', 'close');
     } else {
-      navLinks.classList.remove('top-[9%]');
+      navLinks.classList.remove('top-[15%]');
       menuIcon.setAttribute('name', 'menu');
     }
   }
